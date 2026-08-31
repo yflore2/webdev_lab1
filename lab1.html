@@ -1,129 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<title>Twin Cities Ice Cream | Your guide to the best ice cream the cities have to offer.</title>
-		<link rel="shortcut icon" href="images/icecreamicon.png">
-		<!-- External CSS link can go here-->
-		
-		
-		<!--Resourcing Google Font-->
-		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
-		<!--Internal CSS Styling below-->
-		<style>
+  <head>
+    <title>
+      Twin Cities Ice Cream | Your guide to the best ice cream the cities have
+      to offer.
+    </title>
+    <link rel="shortcut icon" href="images/icecreamicon.png" />
+    <!-- External CSS link can go here-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-		</style>
-		
-	</head>
-	<body>
-		<div id="headerstruct">
-			<header class="struct">
-				<div id="logo"><img src="images/ice_cream_social.png" alt="logo"></div>
-				<nav id="navstruct">
-					<ul>
-						<li class="listruct"><a href="">About us</a></li>
-						<li class="listruct"><a href="">Ice Cream Parlors</a></li>
-						<li class="listruct"><a href="" target="_blank">Newsletter</a></li>
-					</ul>
-				</nav>
-			</header>
-		</div><!--End of headerstruct-->
-		<div id="blockstruct1">
-			<div class="overlay">
-				<div class="contain">
-					
-					<h2>Welcome to twin cities ice cream!</h2>
-					<h2>...think of us as your guide to the best ice cream in the twin cities</h2>
-					<div id="testroundborder"><p class="custqoute"> "The twin cities have the best ice cream in the universe"</p></div>
-				
-				</div><!--end contain-->
-			</div><!--End of layer-->
-		</div><!--End of block struct 1 -->
-		<div id="blockstruct2">
-			<div class="contain">
-				<section id="izzy" onclick="displayShop('izzydisplay')">
-					<h3> Izzy's Ice Cream </h3>
-				</section>
-				<div id="izzydisplay">
-					<div id="mapizzydisplay"></div>
-					<div id="startLat"></div>
-					<div id="startLon"></div>
-				</div>
-				<section class="icecreamshop" onclick="displayShop('joedisplay')">
-					<h3 style="color: #e9ec00;"> sebastian joe's Ice Cream </h3>
-				</section>
-				<div id="joedisplay">
-					<div id="mapjoedisplay"></div>
-				</div>
-				<section class="icecreamshop">
-					<h3 style="color: #34caa0;"> grand ole creamery Ice Cream </h3>
-				</section>
-			</div><!--end contain-->
-		</div><!--End of block struct 2 -->
-		<div id="blockstruct3">
-			<div class="contain">
-				<div class="blockcontain">
-					<div class="columnstruct">
+    <!--Resourcing Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700"
+      rel="stylesheet"
+    />
+    <!--Internal CSS Styling below-->
+    <style></style>
+  </head>
+  <body>
+    <div id="headerstruct">
+      <header class="struct">
+        <div id="logo">
+          <img src="images/ice_cream_social.png" alt="logo" />
+        </div>
+        <nav id="navstruct">
+          <ul>
+            <li class="listruct"><a href="">About us</a></li>
+            <li class="listruct"><a href="">Ice Cream Parlors</a></li>
+            <li class="listruct"><a href="" target="_blank">Newsletter</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <!--End of headerstruct-->
+    <div id="blockstruct1">
+      <div class="overlay">
+        <div class="contain">
+          <h2>Welcome to twin cities ice cream!</h2>
+          <h2>
+            ...think of us as your guide to the best ice cream in the twin
+            cities
+          </h2>
+          <div id="testroundborder">
+            <p class="custqoute">
+              "The twin cities have the best ice cream in the universe"
+            </p>
+          </div>
+        </div>
+        <!--end contain-->
+      </div>
+      <!--End of layer-->
+    </div>
+    <!--End of block struct 1 -->
+    <div id="blockstruct2">
+      <div class="contain">
+        <section id="izzy" onclick="displayShop('izzydisplay')">
+          <h3>Izzy's Ice Cream</h3>
+        </section>
+        <div id="izzydisplay">
+          <div id="mapizzydisplay"></div>
+          <div id="startLat"></div>
+          <div id="startLon"></div>
+        </div>
+        <section class="icecreamshop" onclick="displayShop('joedisplay')">
+          <h3 style="color: #e9ec00">sebastian joe's Ice Cream</h3>
+        </section>
+        <div id="joedisplay">
+          <div id="mapjoedisplay"></div>
+        </div>
+        <section class="icecreamshop">
+          <h3 style="color: #34caa0">grand ole creamery Ice Cream</h3>
+        </section>
+      </div>
+      <!--end contain-->
+    </div>
+    <!--End of block struct 2 -->
+    <div id="blockstruct3">
+      <div class="contain">
+        <div class="blockcontain">
+          <div class="columnstruct"></div>
+        </div>
+        <!--End of blockcontain-->
+      </div>
+      <!--end contain-->
+    </div>
+    <!--End of block struct 3 -->
 
-					</div>		
-				</div><!--End of blockcontain-->
-			</div><!--end contain-->
-		</div><!--End of block struct 3 -->
+    <!--Add Footer below-->
 
-		<!--Add Footer below-->
-		
-		<script>
-		
-		function displayShop(id){
-		
-			var holder = document.getElementById(id);
-			
-			if(holder.style.display == 'block'){
-				holder.style.display = 'none';
-			
-			}else{
-				holder.style.display = 'block';
-			
-			}
-			
-			/*var startPos;
+    <script>
+      function displayShop(id) {
+        var holder = document.getElementById(id);
+
+        if (holder.style.display == "block") {
+          holder.style.display = "none";
+        } else {
+          holder.style.display = "block";
+        }
+
+        /*var startPos;
 			var geoSuccess = function(position) {
 				startPos = position;
 				document.getElementById('startLat').innerHTML = startPos.coords.latitude;
 				document.getElementById('startLon').innerHTML = startPos.coords.longitude;
 			  };
 			  navigator.geolocation.getCurrentPosition(geoSuccess);*/
-			  
-				var mapLat, mapLong;
-				if(id === "izzydisplay"){
-					mapLat = 44.976537;
-					mapLong = -93.251841;
-				}
-				if(id === "joedisplay"){
-					mapLat = 44.962572;
-					mapLong = -93.292275;
-				}
-				initMap(mapLat, mapLong, id)
-			}
-			
-			function initMap(latitude, longitude, id) {
-			  var shopMapValue = "map"+id;
-			 
-			  var uluru = {lat: parseFloat(latitude), lng: parseFloat(longitude)};
-			  var map = new google.maps.Map(document.getElementById(shopMapValue),{
-				zoom: 17,
-				center: uluru
-			  });
-			  var marker = new google.maps.Marker({
-				position: uluru,
-				map: map
-			  });
-			}
-		
-		
-		</script>
-		
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=[YOUR OWN API KEY]&callback=initMap">
-		</script>
 
-	</body>
+        var mapLat, mapLong;
+        if (id === "izzydisplay") {
+          mapLat = 44.976537;
+          mapLong = -93.251841;
+        }
+        if (id === "joedisplay") {
+          mapLat = 44.962572;
+          mapLong = -93.292275;
+        }
+        initMap(mapLat, mapLong, id);
+      }
+
+      function initMap(latitude, longitude, id) {
+        var shopMapValue = "map" + id;
+
+        var uluru = { lat: parseFloat(latitude), lng: parseFloat(longitude) };
+        var map = new google.maps.Map(document.getElementById(shopMapValue), {
+          zoom: 17,
+          center: uluru,
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=[YOUR OWN API KEY]&callback=initMap"
+    ></script>
+  </body>
 </html>
