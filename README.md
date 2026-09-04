@@ -42,5 +42,5 @@ Listed below is an image of the completed interface for Twin Cities Ice Cream.  
 
 ## Submission and Publishing your lab
 
-You will need to push up or copy the latest changes to your assigned GitHub repository provided to you by the instructor.  In Sakai, you will need to submit the link to your repository by the due date and time listed in the write-up.  Make sure you receive confirmation from Sakai that your assignment has been submitted.
+You will need to push up or copy the latest changes to your assigned GitHub repository provided to you by the instructor.  In Brightspace, you will need to submit the link to your repository by the due date and time listed in the write-up.  Make sure you receive confirmation from Brightspace that your assignment has been submitted.
 
